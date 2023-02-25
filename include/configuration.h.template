@@ -1,0 +1,11 @@
+#ifndef CONFIGURATION_H
+#define CONFIGURATION_H
+#define WIFI_SSID "your_wifi_ssid"
+#define WIFI_PASSWORD "your_wifi_password"
+#define MQTT_SERVER "your_mqtt_server"
+#define MQTT_PORT 1883
+#define MQTT_USERNAME "your_username"
+#define MQTT_PASSWORD "your_password"
+#define MQTT_CLIENT_ID "your_client_id"
+#define MQTT_TOPIC "your_topic"
+#endif
