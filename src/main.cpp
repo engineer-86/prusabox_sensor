@@ -54,7 +54,7 @@ void loop() {
   int temperature = sensors.getTempCByIndex(0);
 
   Serial.print("Smoke Value: ");
-  Serial.println(smokeValue);
+  Serial.print(smokeValue);
   Serial.println("ppm");
   Serial.print("Temperature: ");
   Serial.print(temperature);
