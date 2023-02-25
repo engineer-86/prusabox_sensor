@@ -51,17 +51,18 @@ void loop() {
   }
   sensors.requestTemperatures();
   int smokeValue = analogRead(SMOKE_SENSOR_PIN);
-  float temperature = sensors.getTempCByIndex(0);
+  int temperature = sensors.getTempCByIndex(0);
 
   Serial.print("Smoke Value: ");
   Serial.println(smokeValue);
+  Serial.println("ppm");
   Serial.print("Temperature: ");
   Serial.print(temperature);
   Serial.println("C");
 
   // Create JSON object
   StaticJsonDocument<200> jsonDoc;
-  jsonDoc["smokeValue"] = smokeValue;
+  jsonDoc["smoke_value"] = smokeValue;
   jsonDoc["temperature"] = temperature;
 
   // Serialize JSON object to string
